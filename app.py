@@ -33,7 +33,7 @@ figure = px.choropleth(get_df_for_map(df),geojson=geo_json,locations='location',
 figure.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 app.layout = html.Div([
-    html.H1("Hello First Time Dash"),
+    html.H1("Dash Covid 19 Dashboard on Heroku"),
     dcc.Graph(id='graf',figure=figure)
 ])
 
